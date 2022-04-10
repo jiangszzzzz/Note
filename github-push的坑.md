@@ -2,11 +2,11 @@
 
 # 1 错误1     OpenSSL SSL_read: Connection was reset, errno 10054
 
-    貌似是网络波动的原因，过一会就好了。
+貌似是网络波动的原因，过一会就好了。
 
     
 
-# 错误2     Failed to connect to github.com port 443 after 21057 ms: Timed out
+# 2 错误2     Failed to connect to github.com port 443 after 21057 ms: Timed out
 
 时间 2022.4.10
 
@@ -14,7 +14,7 @@
 
 不同版本端口号可能不同。
 
-
+在git bash中运行以下命令。
 
     git config --global http.proxy http://127.0.0.1:10809 
     git config --global https.proxy http://127.0.0.1:10809
