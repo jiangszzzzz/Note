@@ -14,16 +14,26 @@
 
 mv 移动，修改名称. 将/a目录移动到/b下，并重命名为c
 
-    mv A B  # 改名
-    mv /a /b/c # 移动加改名
+    #  改名
+    mv A B
+
+    # 移动加改名 
+    mv /a /b/c 
 
 查看硬件信息  显卡型号查询<http://pci-ids.ucw.cz/mods/PC/10de?action=help?help=pci>
-    
-    df -h # 硬盘
-    cat /proc/meminfo # 内存
-    free -h # 内存
-    lscpu # CPU
-    lspci | grep NVIDIA # GPU 
+   
+    # 硬盘
+    df -h 
+
+    # 内存
+    cat /proc/meminfo
+    free -h 
+
+    # CPU    
+    lscpu 
+
+    # GPU
+    lspci | grep NVIDIA 
     nvidia-smi
 
 
