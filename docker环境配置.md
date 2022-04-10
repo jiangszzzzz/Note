@@ -1,7 +1,7 @@
-# 1 配置环境
+# docker实验环境配置
 ---
 ---
-## 1.1 docker 
+## 1 docker 
 
 ### docker pull
 
@@ -54,7 +54,7 @@ docker 退出后重启
         
     ---- Out[5]: tensor([0.], device='cuda:0')
 
-## 1.2 配置 ssh
+## 2 配置 ssh
 进入容器后。
 
     apt-get update
@@ -82,7 +82,7 @@ root远程连接
 
     ssh root@172.28.6.71 -p 7888:22
 
-## 1.3 环境变量
+## 3 环境变量
 * 通过ssh连接后，无法使用conda pip等命令，原因是ssh连接没有配置环境变量。
 docker exec 进入容器
 
@@ -94,7 +94,7 @@ ssh 连接到远程服务器，path 复制到 /etc/profile 后面
 
 
 
-## 1.4 ping github
+## 4 ping github
 
     apt-get install inetutils-ping
 
@@ -102,17 +102,20 @@ ssh 连接到远程服务器，path 复制到 /etc/profile 后面
 
 加入一行 140.82.114.3 github.com
 
-## 1.5 建立软连接
+## 5 建立软连接
 
     ln -s /opt/conda/bin/python3.7 /usr/bin/python
 
-## docker 打包
+## 6 docker 打包
 
 使用 docker commit containerID REPOSITORY:TAG
 
     docker commit 8819fa22d013 pytorch/s1.0
 
 完成后会出现sha256 哈希值，使用 docker images 可以看到
+
+
+
 
 
 使用 docker save -o IMAGE [IMAGE...]
