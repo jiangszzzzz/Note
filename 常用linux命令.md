@@ -18,6 +18,8 @@
 
     ##   win下 拉服务器上 Linux的文件 
     
+    ### **注意下面这条命令是在 cmd 中运行的 ha ha ha，要不会报 ‘no such file’ **  
+
     scp -P 443 /home/dataset/hello.txt C:/Users/1/Desktop/
     
     ## 然后输密码 有的服务器会修改默认的 22 端口
