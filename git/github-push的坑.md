@@ -12,7 +12,7 @@
 
 无需修改host文件。
 
-直接修改git ，走代理。
+直接修改git ，走代理 __上网。
 
 不同版本端口号可能不同。
 
@@ -21,4 +21,4 @@
     git config --global http.proxy http://127.0.0.1:10809 
     git config --global https.proxy http://127.0.0.1:10809
 
-![1asdsdas](./imgs/img.png)
+![1asdsdas](../imgs/img.png)
