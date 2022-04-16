@@ -124,4 +124,6 @@ size:
 
     chmod a + x abc.sh  #  所有用户添加 abc.sh 的执行权限 
 
-    chmode 777 abc.sh   # 将所有权利授予所有用户
+    chmod 777 abc.sh   # 将所有权利授予所有用户
+
+    chmod -R 777 /bin # bin目录下的 所有权限赋予所有用户
