@@ -5,12 +5,13 @@
 
 ### docker pull
 
-docker hub 可能会出现404，退出登录当前账号可解决。
+docker hub 可能会出现404，退出当前登录的账号可解决(Chrome)。
 
-* 通过查看images的哈希值，查找镜像版本
+* 通过查看images的哈希值，查找镜像版本(方便查找之前用的镜像)。
 
 
     docker images --digests
+
     docker rmi ID # 删除镜像
 
 ### docker run
